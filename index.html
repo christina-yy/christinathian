@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christina Thian Yung Yun | Junior Web Developer</title>
+<meta name="description" content="Portfolio of Christina Thian Yung Yun, Software Engineering graduate from UNIMAS with web and Android development internship experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7FB; --surface:#FFFFFF; --ink:#16213E; --muted:#556079;
+  --line:#D9DFEC; --accent:#2D55E0; --tint:#E6ECFC;
+  --display:'Bricolage Grotesque','Segoe UI',Arial,sans-serif;
+  --body:'Source Sans 3','Segoe UI',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1426; --surface:#171E36; --ink:#E9EEFB; --muted:#9AA6C4; --line:#2A3354; --accent:#7C9BFF; --tint:#1F2A52;}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:340px 1fr;gap:72px}
+aside{position:sticky;top:0;align-self:start;padding:72px 0}
+h1{font-family:var(--display);font-weight:800;font-size:3.4rem;line-height:1;letter-spacing:-.03em}
+.role{margin-top:18px;font-size:1.15rem;color:var(--muted)}
+.contact{margin-top:32px;list-style:none;display:grid;gap:8px}
+.contact a{text-decoration:none;font-weight:600}
+.contact a:hover{text-decoration:underline}
+nav{margin-top:40px;display:grid;gap:6px}
+nav a{color:var(--muted);text-decoration:none;padding:4px 0}
+nav a:hover{color:var(--accent)}
+main{padding:72px 0 96px}
+section{margin-bottom:64px}
+h2{font-family:var(--display);font-size:1.7rem;letter-spacing:-.01em;margin-bottom:24px}
+.lead{font-size:1.25rem;line-height:1.55}
+.item{padding:0 0 28px 22px;border-left:2px solid var(--line);margin-left:2px;position:relative}
+.item:last-child{padding-bottom:0}
+.item::before{content:"";position:absolute;left:-7px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.item h3{font-size:1.15rem;line-height:1.35}
+.meta{color:var(--muted);font-size:.95rem;margin-bottom:8px}
+.item ul{padding-left:20px}
+.item li{margin-bottom:4px}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:24px;margin-bottom:16px}
+.project h3{font-family:var(--display);font-size:1.25rem;margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;list-style:none}
+.tags li{background:var(--tint);color:var(--accent);padding:2px 12px;border-radius:99px;font-size:.9rem;font-weight:600}
+.skills{display:grid;grid-template-columns:150px 1fr;gap:12px 20px}
+.skills dt{font-weight:600}
+.skills dd{color:var(--muted)}
+.hero-in{animation:rise .7s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-in{animation:none}}
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr;gap:0}
+  aside{position:static;padding:48px 0 8px}
+  h1{font-size:2.6rem}
+  nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+  main{padding-top:32px}
+  .skills{grid-template-columns:1fr;gap:2px}
+  .skills dd{margin-bottom:12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside class="hero-in">
+    <h1>Christina Thian Yung Yun</h1>
+    <p class="role">Junior Web Developer and IT Support, based in Kuching, Sarawak</p>
+    <ul class="contact">
+      <li><a href="mailto:christinathian01@gmail.com">christinathian01@gmail.com</a></li>
+      <!-- Add your links below, then remove the comment markers:
+      <li><a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a></li>
+      -->
+    </ul>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p class="lead">I am a Software Engineering graduate with internship experience in web and Android development. I design user interfaces, build CRUD systems, maintain and debug applications, and support end users. I enjoy building practical software and learning new technologies, and I am looking for an entry-level role as a Junior Web Developer or in IT support.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="item">
+        <h3>Frontend Developer Intern, X-FAB Sarawak Sdn. Bhd.</h3>
+        <p class="meta">March 2025 to August 2025</p>
+        <ul>
+          <li>Designed responsive manufacturing web applications using PHP, JavaScript, Bootstrap, HTML and CSS.</li>
+          <li>Designed Android app interfaces in Figma and implemented the layouts in XML and Java.</li>
+          <li>Improved application features based on user requirements and feedback.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>System Developer Intern, Fly Technology Agriculture Sdn. Bhd.</h3>
+        <p class="meta">March 2022 to July 2022</p>
+        <ul>
+          <li>Developed, maintained and debugged Google Sheets-based systems, including an invoice tracking system.</li>
+          <li>Gave technical support to users by troubleshooting system issues.</li>
+          <li>Organized and managed business information in spreadsheet-based systems.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>Manufacturing Execution System (MES) with Chatbot</h3>
+        <p>My final year project: a web-based system for production monitoring and data management. It covers requirements analysis, database integration, a dashboard, data visualization, and a rule-based chatbot that supports operational decisions.</p>
+        <ul class="tags"><li>Web</li><li>Dashboard</li><li>Data visualization</li><li>Chatbot</li></ul>
+        <!-- <p style="margin-top:14px"><a href="YOUR-REPO-OR-DEMO-LINK">View project</a></p> -->
+      </article>
+      <article class="project">
+        <h3>Safana Bekam Customer Management System</h3>
+        <p>A web-based system for a cupping therapy clinic. It manages customers and treatments, and includes search, a dashboard, data visualization and report generation.</p>
+        <ul class="tags"><li>PHP</li><li>MySQL</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap</li></ul>
+        <!-- <p style="margin-top:14px"><a href="YOUR-REPO-OR-DEMO-LINK">View project</a></p> -->
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Web</dt><dd>HTML, CSS, JavaScript, PHP, Bootstrap</dd>
+        <dt>Mobile</dt><dd>Flutter, Dart, XML</dd>
+        <dt>Database</dt><dd>MySQL, SQLite</dd>
+        <dt>Programming</dt><dd>Java, Python, C++, C</dd>
+        <dt>Systems</dt><dd>Linux (basic CLI), Windows</dd>
+        <dt>Tools</dt><dd>Figma, Power BI, Excel, Word, PowerPoint, Canva</dd>
+        <dt>Soft skills</dt><dd>Teamwork, time management, communication, problem solving</dd>
+        <dt>Languages</dt><dd>Mandarin, English, Malay</dd>
+      </dl>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="item">
+        <h3>Bachelor of Software Engineering with Honours, Universiti Malaysia Sarawak (UNIMAS)</h3>
+        <p class="meta">2022 to 2026 · CGPA 3.80 / 4.0</p>
+      </div>
+      <div class="item">
+        <h3>Diploma in Information Technology (Digital Technology), Politeknik Kuching Sarawak</h3>
+        <p class="meta">2019 to 2022 · Network Engineering · CGPA 3.79 / 4.0</p>
+      </div>
+    </section>
+  </main>
+</div>
+</body>
+</html>
